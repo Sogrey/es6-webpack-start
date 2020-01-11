@@ -1,0 +1,35 @@
+{
+  "name": "es6-webpack-start",
+  "version": "1.0.0",
+  "description": "ECMAScript 6 入门",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --colors  --display-reasons --watch",
+    "build2": "webpack --config webpack.config.js --colors",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sogrey/es6-webpack-start.git"
+  },
+  "keywords": [
+    "ES6",
+    "webpack"
+  ],
+  "author": "Sogrey (https://github.com/Sogrey)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sogrey/es6-webpack-start/issues"
+  },
+  "homepage": "https://github.com/Sogrey/es6-webpack-start#readme",
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
