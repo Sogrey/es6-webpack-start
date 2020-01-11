@@ -28,5 +28,3 @@ git commit -m 'deploy master'
 git push -f https://github.com/Sogrey/es6-webpack-start.git master
 
 echo -e "\033[32;40m done \033[0m "
-
-cd -
