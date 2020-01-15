@@ -15,11 +15,15 @@ echo -e '\033[32;40m
  
 '
 
-echo -e "\033[32;40m [1/2] \033[0m Compiling..."
+echo -e "\033[32;40m [1/3] \033[0m Compiling..."
 
-npm run build2
+npm run buildjs
 
-echo -e "\033[32;40m [2/2] \033[0m commit 2 master branch"
+echo -e "\033[32;40m [2/3] \033[0m Compress..."
+
+npm run compress
+
+echo -e "\033[32;40m [3/3] \033[0m commit 2 master branch"
 
 git init
 git add -A

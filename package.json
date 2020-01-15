@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js --colors  --display-reasons --watch",
-    "build2": "webpack --config webpack.config.js --colors",
+    "buildjs": "webpack --config webpack.config.js --colors",
+    "compress": "uglifyjs build/bundle.js -m -o build/bundle.min.js",
     "deploy": "bash deploy.sh"
   },
   "repository": {
@@ -31,5 +32,8 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.7.5"
   }
 }
