@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n[1, 2, 3, 4].map(function (item) {\n  return console.log(item);\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n[1, 2, 3, 4].map(function (item) {\n  return console.log(item);\n})[(11, 12, 13, 14)].map(function (item) {\n  return item + 1;\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
